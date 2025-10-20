@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://gitb1qrr7f6b"]
+
+[ext_resource type="Script" uid="uid://bv18o76y44ui3" path="res://src/toplevel_scenes/MainApp.cs" id="1_3u0g6"]
+[ext_resource type="PackedScene" uid="uid://dipsxgy3lnxi1" path="res://src/entitites/PNGTuber.tscn" id="2_kvr80"]
+[ext_resource type="PackedScene" uid="uid://lruceaosrdpt" path="res://src/entitites/AudioHandler.tscn" id="3_swlc7"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_3u0g6")
+
+[node name="PNGTuberSprite" parent="." instance=ExtResource("2_kvr80")]
+position = Vector2(900, 431)
+
+[node name="AudioHandler" parent="." instance=ExtResource("3_swlc7")]

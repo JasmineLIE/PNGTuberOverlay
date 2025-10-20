@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://lruceaosrdpt"]
+
+[ext_resource type="Script" uid="uid://bkoysbti7l7qc" path="res://src/entitites/AudioInputCapture.cs" id="1_bta0j"]
+
+[sub_resource type="AudioStreamMicrophone" id="AudioStreamMicrophone_bta0j"]
+
+[node name="AudioHandler" type="Node2D"]
+script = ExtResource("1_bta0j")
+
+[node name="MicInputListener" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamMicrophone_bta0j")
+autoplay = true
+bus = &"MicInput"

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dipsxgy3lnxi1"]
+
+[ext_resource type="Texture2D" uid="uid://da17sk1ires5p" path="res://assets/2d/sprites/placeholder/astrid_spritesheet.png" id="1_cwijw"]
+[ext_resource type="Script" uid="uid://bnhce07kqqcgk" path="res://src/entitites/PNGTuberSprite.cs" id="2_u0dv2"]
+
+[node name="PNGTuberSprite" type="Node2D"]
+script = ExtResource("2_u0dv2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_cwijw")
+hframes = 4
